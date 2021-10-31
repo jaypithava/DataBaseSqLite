@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Registration Form"
+        android:textSize="24dp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_gravity="center"
+        android:hint="Enter First Name"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/last"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_gravity="center"
+        android:hint="Enter Last Name"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Enter Phone No"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:layout_gravity="center"
+        android:hint="Enter Email"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginTop="30dp"
+        android:text="Insert"
+        android:layout_marginLeft="30dp"
+         />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInsert"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="200dp"
+        android:text="Update"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:text="Delete"
+        android:layout_marginLeft="30dp"
+         />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="150dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:text="Show"
+        />
+</LinearLayout>
